@@ -1,6 +1,6 @@
 # Module02 practice
 
-## SQL запросы
+## SQL запросы (Раздел 2.3: Подключение к Базам Данных и SQL)
 Скрипты создания таблиц:
 1. [Orders](https://github.com/tdutanton/data-engineering/blob/master/de101_hw/module_02/create_orders.sql)
 2. [People](https://github.com/tdutanton/data-engineering/blob/master/de101_hw/module_02/create_people.sql)
