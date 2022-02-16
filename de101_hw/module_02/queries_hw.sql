@@ -74,7 +74,8 @@ select
 	count(distinct order_id) as orders_count
 from orders o 
 group by customer_name
-order by sales desc limit 20
+order by sales desc 
+limit 20
 
 -- Sales per region
 select
@@ -83,3 +84,13 @@ select
 from orders o 
 group by region
 order by sales desc
+
+-- Returned Orders statistic
+select
+	customer_name,
+	count(distinct order_id) as returned_orders
+from orders o 
+inner join returns r 
+using (order_id)
+group by customer_name
+order by returned_orders desc
